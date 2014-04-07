@@ -1,4 +1,4 @@
 Projekt-I
 =========
 
-Projekt 1 för kursen Informationsarkitekt II
+Projekt 1 för programmet Informationsarkitekt
