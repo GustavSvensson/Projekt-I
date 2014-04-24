@@ -1,22 +1,63 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Projekt</title>
-	</head>
-    <body>
-        <div>
-            <ul>
-                <li>hej</li>
-                <li>hej</li>
-                <li>hej</li>
-                <li>hej</li>
-                <li>hej</li>
-                <li>hej</li>
-                <li>hej</li>
-                <li>hej</li>
-                <li>hej</li>
-                <li>hej</li>
-            </ul>
+  <head>
+    <meta charset="UTF-8">
+    <title>Link Check 1.0</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      
+      <div id="searchBox">
+        <input type="text" id="urlinput" value="Skriv URL..">
+        <div id="layerSelect">
+          Search by layer:
+          <br>
+          1:<input type="radio" name="layer" class="layer1">
+          2:<input type="radio" name="layer" class="layer2">
+          3:<input type="radio" name="layer" class="layer3">
+          4:<input type="radio" name="layer" class="layer4">
+          5:<input type="radio" name="layer" class="layer5">
         </div>
-    </body>
+        <input type="button" id="urlbutton" value="sök">
+        
+      </div>
+      
+      <div id="resultBox">
+        <hr>
+        <div id="sortResults">
+          <select id="error">
+            <option>Error</option>
+            <option value="400">400</option>
+            <option value="403">403</option>
+            <option value="404">404</option>
+            <option value="500">500</option>
+          </select>
+          <select id="url">
+            <option>URL</option>
+            <option value="ascending"> Ascending</option>
+            <option value="descending"> Descendning</option>
+          </select>
+          <select id="appearance">
+            <option>Apearance</option>
+            <option value="ascending"> Ascending</option>
+            <option value="descending"> Descendning</option>
+          </select>
+        </div>
+        <div id="results">
+          <div class="errorFound"></div>
+          <div class="urlFound"></div>
+          <div class="appearanceFound"></div>
+        </div>
+        <hr>
+      </div>
+      
+      <div id="footer">
+        <div class="footerButton" id="mail">Contact</div>
+        <div class="footerButton" id="faq">FAQ</div>
+        <div class="footerButton" id="share">Share</div>
+      </div>
+      
+    </div>
+  </body>
 </html>
