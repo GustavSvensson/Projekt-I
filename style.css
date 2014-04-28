@@ -34,8 +34,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 
-    #error, #url, #appearance{
-    width: 33.33%;   
+    #error, #url{
+    width: 50%;   
     margin:0;
     float: left;
     border:0;
@@ -52,9 +52,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
         max-width:100%;
         overflow:auto;
 }
-    .errorFound{
-    width:33.3%;  
-    height:40px;
+    #errorFound{
+    width:50%;  
+    min-height:40px;
     background:#3445c6; 
     box-sizing: border-box;
     border:1px solid black; 
@@ -62,23 +62,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     
     }
 
-    .urlFound{
-        width:33.3%; 
-        height:40px;
+    #urlFound{
+        width:50%; 
+        min-height:40px;
         background:#fff500; 
         box-sizing: border-box;
         border:1px solid black; 
         float:left;
 
-    }
-
-    .appearanceFound{
-        width:33.3%;  
-        height:40px;
-        background:#1932f2; 
-        box-sizing: border-box;
-        border:1px solid black; 
-        float:left; 
     }
 #error{
     width:
