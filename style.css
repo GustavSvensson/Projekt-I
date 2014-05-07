@@ -36,7 +36,7 @@ table {
 
 #wrapper {
     max-width: 1000px;
-    min-height: 500px;
+    min-height: 850px;
     padding: 30px;
     background-color: #fff;
     text-align: center;
@@ -186,7 +186,7 @@ input[type=radio]:checked + label:before {
 #resultBox {
     width: 75%;
     margin: auto;
-    padding: 40px 0 40px 0; 
+    padding: 50px 0 40px 0; 
 }
 
 #sortResults {
