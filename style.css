@@ -1,5 +1,5 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+html,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -13,19 +13,18 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 }
 
 body {
-    line-height: 1;
+    line-height: 1.2;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
 }
 
 ol,ul {
     list-style: none;
 }
 
-blockquote,q {
-    quotes: none;
-}
-
-blockquote:before,blockquote:after,q:before,q:after {
-    content: none;
+h1 {
+    font-size: 250%;
+    color: grey;
 }
 
 table {
@@ -33,109 +32,36 @@ table {
     border-spacing: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*Structure*/
-body {
-    background-color: grey;
-    font-family: 'PT Sans', sans-serif;
-}
 
 #wrapper {
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1000px;
+    min-height: 500px;
     padding: 30px;
-    background-color: #D3D3D3;
-    border-radius: 10px;
-    box-shadow: 0 10px 5px #727277;
+    background-color: #fff;
     text-align: center;
-}
-
-.footerButton {
-    color: #475cfd;
-    text-align: center;
-}
-
-#resultBox {
-    width: 75%;
     margin: auto;
-    box-shadow: 10px 10px 5px #727277;
 }
 
-#sortResults {
-    float: left;
+#top {
     width: 100%;
-    border: 1px solid #000;
-    background: #FFF;
-}
-
-#error,#url {
-    width: 50%;
-    margin: 0;
-    float: left;
-    border: 0;
-    -webkit-border-radius: 0;
-    font-size: 115%;
-    color: grey;
-}
-
-#results {
-    position: relative;
-    width: 100%;
-    border: 1px solid #000;
-    text-align: center;
-    max-width: 100%;
-    overflow: auto;
-}
-
-#errorFound {
-    width: 50%;
-    min-height: 40px;
-    background: #FFF;
-    box-sizing: border-box;
-    border: 1px solid #000;
-    float: left;
-}
-
-#urlFound {
-    width: 50%;
-    min-height: 40px;
-    background: #FFF;
-    box-sizing: border-box;
-    border: 1px solid #000;
-    float: left;
-}
-
-#footer {
-    text-align: center;
-}
-
-#footer a {
-    float: bottom;
-    color: #000;
-    font-size: 115%;
-    text-decoration: none;
+    padding: 30px 0 75px 0;
+    display: block;
+    text-align: left;
 }
 
 #top a {
-    font-size: 250%;
-    color: grey;
+    font-family: 'Marvel', sans-serif;
+    font-size: 4em;
+    color: #7c7c7c;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
-
-
-
-
+#icon {
+    width: 10%;
+    float: left;
+}
 
 /*Sökfält*/
 #search {
@@ -143,11 +69,11 @@ body {
 }
 
 #search input[type=text] {
-    background: url(search-dark.png) no-repeat 10px 6px #444;
+    background:  no-repeat 10px 6px #959595;
     border: 0 none;
-    font: italic 20px Arial,Helvetica,Sans-serif;
-    color: #777;
-    width: 250px;
+    font: 20px Arial,Helvetica,Sans-serif;
+    color: #fff;
+    width: 350px;
     padding: 6px 15px 6px 35px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -160,6 +86,7 @@ body {
     -moz-transition: all .7s ease 0;
     -o-transition: all .7s ease 0;
     transition: all .7s ease 0;
+    margin-bottom: 10px;
 }
 
 #search input[type=text]:focus {
@@ -167,60 +94,15 @@ body {
     outline: none;
 }
 
-
-
-
-
-/*Sökknapp*/
-#button {
-    background: 0 color-stop(1,#282927));
-    background: 0;
-    background: 0;
-    background: 0;
-    background: 0;
-    background: linear-gradient(tobottom,#4a474a5%,#282927100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a474a',endColorstr='#282927',GradientType=0);
-    background-color: #4a474a;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    border-radius: 7px;
-    display: inline-block;
-    cursor: pointer;
-    color: #dbcedb;
-    font-family: Verdana;
-    font-size: 12px;
-    padding: 4px 35px;
-    text-decoration: none;
-    outline: none;
-}
-
-#button:hover {
-    background: 0 color-stop(1,#4a474a));
-    background: 0;
-    background: 0;
-    background: 0;
-    background: 0;
-    background: linear-gradient(tobottom,#2829275%,#4a474a100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282927',endColorstr='#4a474a',GradientType=0);
-    background-color: #282927;
-}
-
-#button:active {
-    position: relative;
-    top: 1px;
-}
-
-h1 {
-    font-size: 250%;
-    color: grey;
-}
-
-
-
-
-
+ #info {
+     color: #898989;
+ }
 
 /*Radioknappar*/
+#layerSelect {
+    margin-top: 20px;
+}
+
 label {
     display: inline-block;
     cursor: pointer;
@@ -257,4 +139,151 @@ input[type=radio]:checked + label:before {
     font-size: 30px;
     text-align: center;
     line-height: 18px;
+}
+
+/*Sökknapp*/
+#button {
+    background: 0 color-stop(1,#282927));
+    background: 0;
+    background: 0;
+    background: 0;
+    background: 0;
+    background: linear-gradient(tobottom,#4a474a5%,#282927100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a474a',endColorstr='#9f9f9f',GradientType=0);
+    background-color: #777;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 12px;
+    padding: 4px 45px;
+    text-decoration: none;
+    outline: none;
+    margin: 20px 0 10px 0;
+}
+
+#button:hover {
+    background: 0 color-stop(1,#7c7c7c));
+    background: 0;
+    background: 0;
+    background: 0;
+    background: 0;
+    background: linear-gradient(tobottom,#2829275%,#4a474a100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a2a29',endColorstr='#4a474a',GradientType=0);
+    background-color: #6a6868;
+}
+
+#button:active {
+    position: relative;
+    top: 1px;
+}
+
+/*Resultat boxar*/
+
+#resultBox {
+    width: 75%;
+    margin: auto;
+    padding: 40px 0 40px 0; 
+}
+
+#sortResults {
+    float: left;
+    width: 100%;
+    background: #FFF;
+}
+
+.select {
+    border-radius: 0;
+    margin: 0;
+    float: left;
+    width: 50%; /* Set width. Do not set height else it will fail in IE8-10. Use padding for height. */
+    color: #5c5c5c;
+    font-weight: normal;
+    font-size: 1em;
+    line-height:1.2em;
+    margin: 0px;
+    padding: 6px 0; /* use this to set a specific height for your dropdown (DO NOT use the attribute 'height') */
+    border: none;
+    cursor: pointer;
+    text-indent: 0.01px;
+    text-overflow: "";
+    background: url('arrow.png') no-repeat 100% 4px #fff; /* add your own arrow image */
+    *background-image:none; /* turn bg image for IE7 */
+    background: url('arrow.png') no-repeat 100% 0px #fff; /* fallback bg image*/
+    background: url('arrow.png') no-repeat 100% 0px, -webkit-linear-gradient(top, #fff, #9c9c9c);
+    background: url('arrow.png') no-repeat 100% 0px, -moz-linear-gradient(top, #fff, #9c9c9c);
+    background: url('arrow.png') no-repeat 100% 0px, -ms-linear-gradient(top, #fff, #9c9c9c);
+    background: url('arrow.png') no-repeat 100% 0px, -o-linear-gradient(top, #fff, #9c9c9c);
+    background: url('arrow.png') no-repeat 100% 0px, linear-gradient(top, #fff, #9c9c9c);
+    -webkit-appearance: none; /* gets rid of default appearance in Webkit browsers*/
+    -moz-appearance: none; /* Get rid of default appearance for older Firefox browsers */
+    -ms-appearance: none; /* get rid of default appearance for IE8, 9 and 10*/
+    appearance: none;
+}
+
+.select::-ms-expand {
+    display: none; /* hide default arrow in IE10 */
+}
+
+.select option {
+    background: #fff; /* style the dropdown bg color */
+}
+
+#results {
+    position: relative;
+    width: 100%;
+    border: 1px solid #656565;
+    text-align: center;
+    max-width: 100%;
+    overflow: auto;
+}
+
+#errorFound {
+    width: 50%;
+    min-height: 150px;
+    background: #FFF;
+    box-sizing: border-box;
+    border: 1px solid #7c7c7c;
+    float: left;
+}
+
+#urlFound {
+    width: 50%;
+    min-height: 150px;
+    background: #FFF;
+    box-sizing: border-box;
+    border: 1px solid #6c6c6c;
+    float: left;
+}
+
+/*footermeny*/
+
+#footer {
+    background-color: #6a6a6a;
+    height: 80px;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    margin: 0;
+}
+
+#stuff {
+    width: 50%;
+    margin: auto;
+    height: 100%;
+}
+
+#footer a {
+    text-align: center;
+    font-size: 1.05em;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 30%;
+    margin-top: 25px;
+    border-right: 2px solid #fff;
+   
 }

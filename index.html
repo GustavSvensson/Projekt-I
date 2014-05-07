@@ -8,95 +8,74 @@
     <link href="style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel=
     'stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Marvel" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div id="wrapper">
         <div id="top">
-            <a href="index.html">LINKCHECK</a><br>
-            <br>
-            <br>
+            <a href="index.html">linkChecker</a>
+            <img id="icon" src="icon.jpg">
         </div>
 
-
-
-
         <form action="/search" id="search" method="get" name="search">
-            <input name="q" placeholder="URL..." size="40" type="text">
-        </form><br>
+        <input id="q" name="q" placeholder="URL..." size="40" type="text">
+        </form>
+        
+        <p id="info">Enter the address (URL) of a document that you would like to check:</p>
 
         <div id="layerSelect">
-            Search by layer:<br>
-            <br>
-
-
+            <p>Search layers:</p>
 
             <div class="radio">
-                <input id="1" name="lager" type="radio" value="1"> <label for=
-                "1">1</label> <input id="2" name="lager" type="radio" value=
-                "2"> <label for="2">2</label> <input id="3" name="lager" type=
-                "radio" value="3"> <label for="3">3</label> <input id="4" name=
-                "lager" type="radio" value="4"> <label for="4">4</label>
-                <input id="5" name="lager" type="radio" value="5"> <label for=
-                "5">5</label>
+                <input id="1" name="lager" type="radio" value="1"> <label for="1">1</label>
+                <input id="2" name="lager" type="radio" value="2"> <label for="2">2</label> 
+                <input id="3" name="lager" type="radio" value="3"> <label for="3">3</label> 
+                <input id="4" name="lager" type="radio" value="4"> <label for="4">4</label>
+                <input id="5" name="lager" type="radio" value="5"> <label for="5">5</label>
             </div>
-        </div><br>
-        <input id="button" type="button" value="SÖK"><br>
-        <br>
-
-
+        </div>
+        <input id="button" type="button" value="SÖK">
 
         <div id="resultBox">
             <div id="sortResults">
-                <select id="error">
-                    <option>
-                        Error
-                    </option>
-
-                    <option value="400">
-                        400
-                    </option>
-
+                <select class="select">
+                    <option>Error</option>    
+                    <option value="400">400</option>
                     <option value="403">
                         403
                     </option>
-
                     <option value="404">
                         404
                     </option>
-
                     <option value="500">
                         500
                     </option>
-                </select> <select id="url">
+                </select> <select class="select">
                     <option>
                         URL
                     </option>
-
                     <option value="ascending">
                         Ascending
                     </option>
-
                     <option value="descending">
                         Descendning
                     </option>
                 </select>
             </div>
 
-
-
             <div id="results">
                 <ul id="errorFound"></ul>
 
                 <ul id="urlFound"></ul>
             </div>
-        </div><br>
-
-
-
-        <div id="footer">
-            <a href="index.html">CONTACT</a> <a href="index.html">FAQ</a>
-            <a href="index.html">SHARE</a>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="stuff">    
+        <a href="#">CONTACT</a> 
+        <a href="#">FAQ</a>
+        <a href="#">SHARE</a>
         </div>
     </div>
 </body>
