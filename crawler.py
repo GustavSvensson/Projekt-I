@@ -90,7 +90,7 @@ def add_to_tocrawl(crawled, tocrawl, newlinks, depth):
             tocrawl.append([link,depth])
 
 
-check_web_health('http://dist2.webbintro.se/', 5)
+check_web_health('https://mah.itslearning.com/elogin/', 5)
 
 
 
