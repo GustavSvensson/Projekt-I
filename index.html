@@ -18,59 +18,26 @@
             <img id="icon" src="icon.jpg">
         </div>
 
-        <form action="/search" id="search" method="get" name="search">
-        <input id="q" name="q" placeholder="URL..." size="40" type="text">
-        </form>
-        
+        <form action="../cgi-bin/check2.py" id="search" method="post" name="search">
+        <input id="q" name="first_name" placeholder="URL..." size="40" type="text">
+
         <p id="info">Enter the address (URL) of a document that you would like to check:</p>
 
         <div id="layerSelect">
             <p>Search layers:</p>
 
             <div class="radio">
-                <input id="1" name="lager" type="radio" value="1"> <label for="1">1</label>
+                <input id="1" name="lager" type="radio" value="1" checked="checked"> <label for="1">1</label>
                 <input id="2" name="lager" type="radio" value="2"> <label for="2">2</label> 
                 <input id="3" name="lager" type="radio" value="3"> <label for="3">3</label> 
                 <input id="4" name="lager" type="radio" value="4"> <label for="4">4</label>
                 <input id="5" name="lager" type="radio" value="5"> <label for="5">5</label>
             </div>
         </div>
-        <input id="button" type="button" value="Search">
-
-        <div id="resultBox">
-            <div id="sortResults">
-                <select class="select">
-                    <option>Error</option>    
-                    <option value="400">400</option>
-                    <option value="403">
-                        403
-                    </option>
-                    <option value="404">
-                        404
-                    </option>
-                    <option value="500">
-                        500
-                    </option>
-                </select> <select class="select">
-                    <option>
-                        URL
-                    </option>
-                    <option value="ascending">
-                        Ascending
-                    </option>
-                    <option value="descending">
-                        Descendning
-                    </option>
-                </select>
-            </div>
-
-            <div id="results">
-                <ul id="errorFound"></ul>
-
-                <ul id="urlFound"></ul>
-            </div>
-        </div>
-    </div>
+        <input id="button" type="submit" value="Search">
+ </form>
+    
+</div>    
     <div id="footer">
         <div id="stuff">    
         <a href="#">CONTACT</a> 
